@@ -339,7 +339,7 @@
 		$status = $_POST['status'];
 		
 
-		$sql = "INSERT INTO leaves(name,reg,year,email,department,no,leavedate,leavereason,status)VALUES('$name','$reg','$year','$email','$department','no','$leavedate','$editor1','$status')";
+		$sql = "INSERT INTO leaves(name,reg,year,email,department,no,leavedate,leavereason,status)VALUES('$name','$reg','$year','$email','$department','$no','$leavedate','$editor1','$status')";
 
 		$run = mysqli_query($con,$sql);
 
