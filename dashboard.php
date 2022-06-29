@@ -75,6 +75,7 @@
 								<th>#</th>
 								<th>Name</th>
 								<th>Reg No</th>
+								<th>Email</th>
 								<th>Year</th>
 								<th>Department</th>
 								<th>Contact No</th>
@@ -95,6 +96,7 @@
 									<td><?php echo $cnt;?></td>
 							 		<td><?php echo $result['name']; ?></td>
 									 <td><?php echo $result['reg']; ?></td>
+									 <td><?php echo $result['email']; ?></td>
 									 <td><?php echo $result['year']; ?></td>
 							 		<td><?php echo $result['department']; ?></td>
 									 <td><?php echo $result['no']; ?></td>
@@ -200,6 +202,7 @@
 								<th>#</th>
 								<th>Name</th>
 								<th>Reg.No</th>
+								<th>Email</th>
 								<th>Year</th>
 								<th>Department</th>
 								<th>Contact No</th>
@@ -220,6 +223,7 @@
 									<td><?php echo $cnt;?></td>
 							 		<td><?php echo $result['name']; ?></td>
 									 <td><?php echo $result['reg']; ?></td>
+									  <td><?php echo $result['email']; ?></td>
 									 <td><?php echo $result['year']; ?></td>
 							 		<td><?php echo $result['department']; ?></td>
 									 <td><?php echo $result['no']; ?></td>
@@ -263,6 +267,7 @@
 								<th>#</th>
 								<th>Name</th>
 								<th>Reg.NO</th>
+								<th>Email</th>
 								<th>Year</th>
 								<th>Department</th>
 								<th>Contact No</th>
@@ -283,6 +288,7 @@
 									<td><?php echo $cnt;?></td>
 							 		<td><?php echo $result['name']; ?></td>
 									 <td><?php echo $result['reg']; ?></td>
+									 <td><?php echo $result['email']; ?></td>
 									 <td><?php echo $result['year']; ?></td>
 							 		<td><?php echo $result['department']; ?></td>
 									 <td><?php echo $result['no']; ?></td>
