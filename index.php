@@ -92,8 +92,8 @@
 
 		$sql = "SELECT * FROM users WHERE email = '$user' AND password = '$password'";
 
-		$run = mysqli_query($con,$sql);
-		$check = mysqli_num_rows($run);
+		 $run = mysqli_query($con,$sql);
+		 $check = mysqli_num_rows($run);
 
 		$name = $_GET['name'];
 

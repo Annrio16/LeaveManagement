@@ -83,25 +83,30 @@
 		$user = $_POST['email'];
 		$password = $_POST['password'];
 
-		$password = md5($_POST['password']);
+		//$password = md5($_POST['password']);
 
 		include 'inc/config.php';
 
 		$sql = "SELECT * FROM hod WHERE email = '$user' AND password = '$password'";
 
-		$run = mysqli_query($con,$sql);
-		$check = mysqli_num_rows($run);
+		// $run = mysqli_query($con,$sql);
+		// $check = mysqli_num_rows($run);
+
+    $result = $con->prepare($sql);
+    $result->execute();
+    $result->store_result();
+    $check = $result->num_rows;
 
 		if($check == 1){
 			session_start();
 			$_SESSION['email'] = $user; 
 			echo "<script> 
-					window.open('dashboard.php','_self');
+					window.open('dashboard1.php','_self');
 				  </script>";
 		}else{
 			echo "<script> 
 			alert('Email or Password Invaild');
-			window.open('index.php1','_self');
+			window.open('index1.php','_self');
 			</script>";
 		}
 	}

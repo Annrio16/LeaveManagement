@@ -212,7 +212,7 @@
 							</thead>
 							 <tbody>
 							 	<?php 
-									$sql = "SELECT * FROM leaves WHERE status = 0 && email='".$_SESSION['email']."'";
+									$sql = "SELECT * FROM leaves WHERE status = 0 and email='".$_SESSION['email']."'";
 									$que = mysqli_query($con,$sql);
 									$cnt=1;
 									while ($result = mysqli_fetch_assoc($que)) {
